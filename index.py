@@ -48,3 +48,8 @@ for property in session.query(Properties):
 #solr.add(docs)
 
 #solr.optimize
+
+
+#1224 Google maps
+#1247 template error
+#1228 Rhh unapprove property not working

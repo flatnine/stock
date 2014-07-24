@@ -5,6 +5,7 @@ import os, csv
 import sys
 import re
 
+
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from schema import Base, Product
@@ -45,3 +46,6 @@ for row in reader:
 		print row
 		session.add(Product(style=style.upper(),description=row[0],size=row[1],ean=row[2]))
 		session.commit()
+
+
+
